@@ -3,44 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SA Rhodium Trading | 100kg Fine Rhodium 99.95%</title>
+<title>SA Rhodium Trading | 100KG 99.95% Pure Rhodium</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif}
-body{background:#0a0a0a;color:#fff;line-height:1.6}
-.header{background:#000;border-bottom:2px solid #c0a050;padding:15px 20px;position:sticky;top:0}
-.header-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:900;font-size:20px}.logo span{color:#c0a050}
-.badge{background:#c0a050;color:#000;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700}
-.hero{padding:50px 20px;text-align:center;background:linear-gradient(180deg,#1a1a1a 0%,#0a0a0a 100%)}
-.hero h1{font-size:32px;line-height:1.2;margin-bottom:15px}.hero h1 span{color:#c0a050}
-.hero p{color:#aaa;max-width:600px;margin:0 auto 25px}
-.cta{display:inline-block;background:#25D366;color:#fff;padding:16px 35px;border-radius:30px;font-weight:800;text-decoration:none;font-size:18px;margin:10px}
-.specs{max-width:1000px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-.spec-card{background:#151515;border:1px solid #2a2a2a;padding:20px;border-radius:12px;text-align:center}
-.spec-card h3{color:#c0a050;font-size:11px;text-transform:uppercase;margin-bottom:5px}.spec-card p{font-size:18px;font-weight:700}
-.section{max-width:1000px;margin:40px auto;padding:0 20px}.section h2{font-size:24px;margin-bottom:20px;border-left:4px solid #c0a050;padding-left:12px}
-.card{background:#151515;border:1px solid #222;padding:20px;border-radius:12px}.card h4{color:#c0a050;margin-bottom:8px}
-.price-box{background:linear-gradient(135deg,#c0a050,#8a6d2b);color:#000;padding:25px;border-radius:15px;text-align:center;margin:30px auto;max-width:600px}
-.footer{background:#000;padding:30px 20px;text-align:center;border-top:1px solid #222;margin-top:40px;color:#777;font-size:13px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#080808;color:#fff;line-height:1.4}
+.top{position:sticky;top:0;z-index:100;background:rgba(0,0,0,.95);backdrop-filter:blur(12px);border-bottom:1px solid #1e1e1e;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:2px;font-size:18px}.logo span{color:#d4af37}
+.badge{border:1px solid #d4af37;color:#d4af37;padding:6px 14px;border-radius:100px;font-size:11px;font-weight:900;letter-spacing:1px}
+.hero{max-width:1180px;margin:0 auto;padding:50px 22px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.hero h1{font-size:52px;font-weight:900;line-height:.88;letter-spacing:-1.5px;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:#d4af37;background:linear-gradient(90deg,#d4af37,#f9eaa0);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sub{color:#8a8a8a;font-size:17px;margin-bottom:26px}
+.call{background:#ffffff;color:#000;padding:20px 30px;border-radius:100px;font-weight:900;font-size:19px;text-decoration:none;display:inline-flex;align-items:center;gap:12px;box-shadow:0 12px 40px rgba(255,255,255,.18)}
+.call small{font-weight:700;opacity:.7;font-size:12px;display:block}
+.email{margin-top:14px;display:inline-flex;align-items:center;gap:8px;color:#d4af37;border:1px solid #2a2a2a;padding:14px 24px;border-radius:100px;text-decoration:none;font-weight:700}
+.stats{max-width:1180px;margin:10px auto;padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:#131313;border:1px solid #1e1e1e;padding:18px;border-radius:16px}
+.stat b{color:#d4af37;font-size:10px;letter-spacing:1px}
+.stat p{font-size:22px;font-weight:900;margin-top:4px}
+.gallery{max-width:1180px;margin:50px auto;padding:0 22px}
+.gallery h2{font-size:30px;font-weight:900;letter-spacing:-1px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:#131313;border:1px solid #1e1e1e;border-radius:20px;overflow:hidden;transition:.3s}
+.card:hover{border-color:#d4af37}
+.card img{width:100%;height:200px;object-fit:cover;display:block}
+.card .info{padding:14px 16px}
+.card .info h4{font-size:14px;font-weight:800;margin-bottom:4px}
+.card .info p{color:#6d6d6d;font-size:11px}
+.price{max-width:1180px;margin:40px auto;padding:0 22px}
+.price-box{background:linear-gradient(135deg,#d4af37 0%,#a67c00 100%);color:#000;padding:32px;border-radius:24px;text-align:center}
+.contact{max-width:1180px;margin:60px auto;padding:0 22px;text-align:center}
+.footer{background:#000;border-top:1px solid #1e1e1e;padding:32px 22px;text-align:center;color:#555;font-size:12px;margin-top:60px;line-height:1.8}
+.float{position:fixed;bottom:22px;right:22px;background:#fff;color:#000;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.6);z-index:999}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:40px}.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-inner"><div class="logo">SA <span>RHODIUM</span> TRADING</div><div class="badge">DURBAN • LICENSED</div></div></div>
+
+<div class="top">
+<div class="logo">SA <span>RHODIUM</span> TRADING</div>
+<div class="badge">99.95% PURE • 100KG STOCK</div>
+</div>
+
 <div class="hero">
-<h1>100KG <span>FINE RHODIUM</span><br>99.95% PURE</h1>
-<p>Direct licensed trader in Durban, South Africa. Assayed, insured, export-ready.</p>
-<a class="cta" href="https://wa.me/27870550335?text=Hello%20SA%20Rhodium%20Trading%20-%20I%20am%20interested%20in%20100kg%20Rhodium">💬 WhatsApp: +27 87 055 0335</a><br>
-<a class="cta" style="background:transparent;border:2px solid #c0a050;color:#c0a050" href="mailto:account@unicormrefiners.com">📧 account@unicormrefiners.com</a>
+<div>
+<h1>100KG <em>FINE RHODIUM</em><br>99.95% PURE</h1>
+<p class="sub">Direct mandate stock. Assayed powder, SGS certified, Brinks vault secured. Immediate corporate allocation — no broker chain.</p>
+
+<a class="call" href="tel:+27870550335">📞 LANDLINE: +27 87 055 0335</a>
+<br>
+<a class="email" href="mailto:sarhodiumtrading.co.za@geologist.com">✉️ sarhodiumtrading.co.za@geologist.com</a>
+
+<div style="margin-top:28px;color:#555;font-size:12px;line-height:1.6">
+✔ Proof of Ownership ✔ SGS Assay ✔ Attorney Escrow ✔ Global Export (FOB/CIF)
 </div>
-<div class="specs">
-<div class="spec-card"><h3>Commodity</h3><p>Fine Rhodium</p></div>
-<div class="spec-card"><h3>Purity</h3><p>99.95%</p></div>
-<div class="spec-card"><h3>Quantity</h3><p>100 KG</p></div>
-<div class="spec-card"><h3>Form</h3><p>Powder</p></div>
 </div>
-<div class="section"><div class="price-box"><h3>Price: On Application</h3><p>Live JM Fix • FOB Durban • CIF Available<br>Payment via Escrow Attorney - No Upfront Fees</p></div></div>
-<div class="section"><h2>Stock Overview</h2><div class="card"><p><strong>Origin:</strong> South Africa<br><strong>Location:</strong> Secured Vault, Durban<br><strong>Packing:</strong> 10 x 10kg Sealed Drums<br><strong>Assay:</strong> SGS Certificate<br><strong>Ownership:</strong> Full Proof of Ownership<br><br><span style="color:#c0a050">✓ Direct Mandate<br>✓ Export License Ready<br>✓ Video Verification Available</span></p></div></div>
-<div class="section" style="text-align:center"><h2 style="text-align:left">Contact</h2><a class="cta" href="https://wa.me/27870550335">WhatsApp: +27 87 055 0335</a><br><br><p><strong>Email:</strong> account@unicormrefiners.com<br><strong>Location:</strong> Durban, South Africa</p></div>
-<div class="footer"><strong>SA RHODIUM TRADING</strong><br>account@unicormrefiners.com | +27 87 055 0335<br>© 2026 SA Rhodium Trading</div>
+
+<div style="background:#131313;border:1px solid #1e1e1e;border-radius:26px;padding:12px">
+<img src="https://images.unsplash.com/photo-1610375461367-602ee18c00c8?w=800" style="width:100%;height:380px;object-fit:cover;border-radius:18px">
+<div style="display:flex;justify-content:space-between;padding:12px 8px 4px;color:#666;font-size:11px">
+<span>RH-LOT: RH-001</span><span>10x 10KG SEALED</span><span>SGS VERIFIED</span>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>COMMODITY</b><p>Rhodium</p></div>
+<div class="stat"><b>PURITY</b><p>99.95%</p></div>
+<div class="stat"><b>QTY AVAILABLE</b><p>100 KG</p></div>
+<div class="stat"><b>FORM</b><p>Fine Powder</p></div>
+</div>
+
+<div class="gallery">
+<h2>Rhodium Stock • Pieces Gallery</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600"><div class="info"><h4>Rhodium Ingot 1KG</h4><p>99.95% Polished Bar • Certified</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600"><div class="info"><h4>Fine Powder 10KG Drum</h4><p>Sealed Industrial Drum • Lot RH-01</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600"><div class="info"><h4>Rhodium Sponge</h4><p>Porous High Purity • Lab Tested</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1583937443325-54d85ed6e7f7?w=600"><div class="info"><h4>Vault Storage</h4><p>10 Drums • Tamper Proof • Insured</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=600"><div class="info"><h4>SGS Assay Certificate</h4><p>XRF Verified • Export License</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1610375461367-602ee18c00c8?w=600"><div class="info"><h4>Ready for Export</h4><p>Brinks Delivery • FOB / CIF Worldwide</p></div></div>
+</div>
+</div>
+
+<div class="price">
+<div class="price-box">
+<h2 style="font-size:34px;font-weight:900">Price: On Application (POA)</h2>
+<p style="font-weight:800;margin-top:8px;font-size:15px">Live Johnson Matthey Fix • Escrow via Attorney • No Upfront Fees</p>
+</div>
+</div>
+
+<div class="contact">
+<h2 style="font-size:36px;font-weight:900;letter-spacing:-1px">Contact Owner Direct</h2>
+<p style="color:#777;margin:12px 0 26px">Serious buyers only • LOI + POF required • No broker chain</p>
+<a class="call" href="tel:+27870550335" style="margin:0 auto">📞 TAP TO CALL LANDLINE: +27 87 055 0335</a>
+<div style="margin-top:18px">
+<a class="email" href="mailto:sarhodiumtrading.co.za@geologist.com">sarhodiumtrading.co.za@geologist.com</a>
+</div>
+</div>
+
+<div class="footer">
+<b style="color:#fff;letter-spacing:2px">SA RHODIUM TRADING</b><br>
+LANDLINE: +27 87 055 0335 | sarhodiumtrading.co.za@geologist.com<br>
+Secure Vault • SGS Certified • Worldwide Export<br><br>
+© 2026 SA Rhodium Trading. All Rights Reserved. Direct Mandate.
+</div>
+
+<a class="float" href="tel:+27870550335">📞</a>
+
 </body>
 </html>
