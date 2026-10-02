@@ -2,66 +2,119 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SA Rhodium Trading | Rhodium</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SA RHODIUM TRADING | Direct Mandate Rhodium 99.95%</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,Inter,sans-serif}
-body{background:#050505;color:#fff}
-.top{background:#000;border-bottom:1px solid #1a1a1a;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
-.logo{font-weight:900;letter-spacing:2px;font-size:16px}.logo b{color:#d4af37}
-.badge{border:1px solid #d4af37;color:#d4af37;padding:7px 18px;border-radius:100px;font-size:12px;font-weight:900;letter-spacing:2px}
-.hero{max-width:1100px;margin:0 auto;padding:40px 20px;text-align:center}
-.hero h1{font-size:54px;font-weight:900;line-height:.9;letter-spacing:-2px}
-.hero h1 span{color:#d4af37}
-.call{background:#fff;color:#000;padding:20px 32px;border-radius:100px;font-weight:900;font-size:20px;text-decoration:none;display:inline-flex;margin-top:22px}
-.email{margin-top:14px;display:inline-flex;color:#d4af37;border:1px solid #222;padding:13px 22px;border-radius:100px;text-decoration:none;font-weight:700}
-.grid{max-width:1100px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.card{background:linear-gradient(135deg,#151515,#0f0f0f);border:1px solid #1e1e1e;border-radius:20px;padding:26px;text-align:left}
-.card .icon{font-size:36px;margin-bottom:12px}
-.card h4{font-size:15px;margin-bottom:4px}.card p{color:#666;font-size:12px}
-.footer{text-align:center;padding:30px;color:#444;font-size:12px;border-top:1px solid #1a1a1a;margin-top:50px}
-.float{position:fixed;bottom:20px;right:20px;background:#fff;color:#000;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.5)}
-@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:42px}}
-@media(max-width:500px){.grid{grid-template-columns:1fr}}
+:root{--gold:#d4af37;--gold2:#f5d76e;--bg:#060606;--card:#121212;--border:#1e1e1e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+a{text-decoration:none}
+.top{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(6,6,6,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:18px 28px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:3px;font-size:15px}.logo span{color:var(--gold)}
+.nav{display:flex;gap:24px;font-size:11px;letter-spacing:1.5px;color:#777;font-weight:600}
+.badge{border:1px solid var(--gold);color:var(--gold);padding:8px 20px;border-radius:100px;font-size:11px;font-weight:900;letter-spacing:2px}
+.hero{max-width:1280px;margin:0 auto;padding:120px 28px 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:64px;line-height:.9;letter-spacing:-2px}
+.hero h1 i{font-style:normal;color:var(--gold);background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.kicker{color:var(--gold);font-size:11px;letter-spacing:3px;font-weight:800;margin-bottom:16px}
+.sub{color:#8e8e8e;font-size:18px;line-height:1.5;margin:18px 0 28px;max-width:500px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#9e7e1e);color:#000;padding:18px 32px;border-radius:100px;font-weight:900;font-size:14px;letter-spacing:1px}
+.btn-line{border:1px solid #2a2a2a;color:#fff;padding:18px 32px;border-radius:100px;font-weight:700;font-size:14px}
+.hero-img{background:var(--card);border:1px solid var(--border);border-radius:28px;padding:14px}
+.hero-img img{width:100%;height:460px;object-fit:cover;border-radius:18px}
+.specs{max-width:1280px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.spec{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px}
+.spec label{color:var(--gold);font-size:10px;letter-spacing:2px;font-weight:800}.spec p{font-size:22px;font-weight:900;margin-top:6px}
+.section{max-width:1280px;margin:80px auto;padding:0 28px}
+.section h2{font-family:'Playfair Display',serif;font-size:38px;letter-spacing:-1px;margin-bottom:10px}
+.section .line{width:40px;height:3px;background:var(--gold);margin:12px 0 28px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gcard{background:var(--card);border:1px solid var(--border);border-radius:22px;overflow:hidden;transition:.4s}
+.gcard:hover{border-color:var(--gold);transform:translateY(-4px)}
+.gcard img{width:100%;height:240px;object-fit:cover}
+.gcard .meta{padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
+.gcard h4{font-size:14px;font-weight:800}.gcard span{color:#666;font-size:11px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.trust div{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;text-align:center}
+.trust b{font-size:28px;display:block;margin-bottom:6px}
+.contact{max-width:800px;margin:80px auto;padding:48px;background:linear-gradient(180deg,#121212,#0a0a0a);border:1px solid var(--border);border-radius:28px;text-align:center}
+.footer{border-top:1px solid var(--border);padding:36px 28px;text-align:center;color:#444;font-size:11px;letter-spacing:1px;margin-top:80px}
+.float{position:fixed;bottom:24px;right:24px;background:#fff;color:#000;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 12px 40px rgba(0,0,0,.6);z-index:999}
+@media(max-width:980px){.hero{grid-template-columns:1fr;padding-top:100px}.hero h1{font-size:48px}.specs{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.gallery{grid-template-columns:1fr}.nav{display:none}}
 </style>
 </head>
 <body>
-<div class="top"><div class="logo">SA <b>RHODIUM</b> TRADING</div><div class="badge">RHODIUM</div></div>
+<div class="top">
+<div class="logo">SA <span>RHODIUM</span> TRADING</div>
+<div style="display:flex;align-items:center;gap:22px">
+<div class="nav"><span>SGS CERTIFIED</span><span>BRINKS</span><span>ESCROW</span></div>
+<div class="badge">RHODIUM</div>
+</div>
+</div>
 
 <div class="hero">
-<h1>FINE<br><span>RHODIUM</span><br>99.95% PURE</h1>
-<p style="color:#777;margin-top:14px;font-size:16px">Direct mandate • SGS certified • Vault secured • Export ready</p>
-<a class="call" href="tel:+27870550335">📞 LANDLINE: +27 87 055 0335</a><br>
-<a class="email" href="mailto:sarhodiumtrading.co.za@geologist.com">sarhodiumtrading.co.za@geologist.com</a>
+<div>
+<div class="kicker">DIRECT MANDATE • VAULT SECURED</div>
+<h1>FINE<br><i>RHODIUM</i><br>99.95% PURE</h1>
+<p class="sub">Institutional-grade fine rhodium powder. Assayed, insured, export-ready. Serious buyers only — LOI + POF required. No broker chain.</p>
+<div class="cta">
+<a class="btn-gold" href="tel:+27870550335">📞 LANDLINE: +27 87 055 0335</a>
+<a class="btn-line" href="mailto:sarhodiumtrading.co.za@geologist.com">✉️ sarhodiumtrading.co.za@geologist.com</a>
+</div>
+<p style="margin-top:24px;color:#555;font-size:11px;letter-spacing:1px">✔ PROOF OF OWNERSHIP ✔ SGS ASSAY ✔ ATTORNEY ESCROW ✔ FOB / CIF WORLDWIDE</p>
+</div>
+<div class="hero-img">
+<img src="r1.jpg" onerror="this.src='https://images.unsplash.com/photo-1610375461367-602ee18c00c8?w=800'">
+<div style="display:flex;justify-content:space-between;padding:12px 6px 4px;color:#666;font-size:10px;letter-spacing:1px"><span>RHODIUM • ELEMENT 45</span><span>99.95% PURE</span><span>SGS VERIFIED</span></div>
+</div>
 </div>
 
-<div class="grid">
-<div class="card"><div class="icon">◼️</div><h4>Fine Powder</h4><p>99.95% Pure • Grey Metallic Powder • Sealed Drums</p></div>
-<div class="card"><div class="icon">🔬</div><h4>Rhodium Sponge</h4><p>Porous High Purity • Lab Tested • SGS</p></div>
-<div class="card"><div class="icon">🏦</div><h4>Vault Storage</h4><p>10x 10KG Drums • Tamper Proof • Insured • 24/7</p></div>
-<div class="card"><div class="icon">📜</div><h4>SGS Certificate</h4><p>Assay Report • XRF Verified • Export License Ready</p></div>
-<div class="card"><div class="icon">⚖️</div><h4>1KG Ingot Bar</h4><p>Investment Grade • Polished • Serialized</p></div>
-<div class="card"><div class="icon">✈️</div><h4>Export Ready</h4><p>Brinks • FOB / CIF Worldwide • Attorney Escrow</p></div>
+<div class="specs">
+<div class="spec"><label>COMMODITY</label><p>Rhodium</p></div>
+<div class="spec"><label>PURITY</label><p>99.95%</p></div>
+<div class="spec"><label>FORM</label><p>Fine Powder</p></div>
+<div class="spec"><label>STOCK</label><p>Available</p></div>
 </div>
 
-<div style="max-width:1100px;margin:50px auto;padding:0 20px;text-align:center">
-<div style="background:linear-gradient(135deg,#d4af37,#a67c00);color:#000;padding:30px;border-radius:22px">
-<h2 style="font-size:30px;font-weight:900">Price: On Application</h2>
-<p style="font-weight:700;margin-top:6px">Johnson Matthey Live Fix • No Upfront Fees</p>
+<div class="section">
+<h2>Rhodium Portfolio</h2>
+<div class="line"></div>
+<div class="gallery">
+<div class="gcard"><img src="r1.jpg"><div class="meta"><h4>Fine Powder</h4><span>99.95%</span></div></div>
+<div class="gcard"><img src="r2.jpg"><div class="meta"><h4>1KG Ingot Bar</h4><span>Investment</span></div></div>
+<div class="gcard"><img src="r3.jpg"><div class="meta"><h4>Sponge Metal</h4><span>Porous</span></div></div>
+<div class="gcard"><img src="r4.jpg"><div class="meta"><h4>Vault Drums</h4><span>10x 10KG</span></div></div>
+<div class="gcard"><img src="r5.jpg"><div class="meta"><h4>Raw Lump</h4><span>Lab Tested</span></div></div>
+<div class="gcard"><img src="r6.jpg"><div class="meta"><h4>Crystal Form</h4><span>Elemental</span></div></div>
 </div>
-<div style="margin-top:40px">
-<h2 style="font-size:34px;font-weight:900">Contact Direct Owner</h2>
-<p style="color:#666;margin:10px 0 22px">Serious buyers only • LOI + POF required</p>
-<a class="call" href="tel:+27870550335">📞 TAP TO CALL LANDLINE</a>
-<div style="margin-top:14px;color:#d4af37;font-weight:700">sarhodiumtrading.co.za@geologist.com</div>
 </div>
+
+<div class="section">
+<h2>Security & Compliance</h2>
+<div class="line"></div>
+<div class="trust">
+<div><b>🛡️</b><span style="color:#888;font-size:12px">SGS Certified Assay & XRF Verification</span></div>
+<div><b>🏦</b><span style="color:#888;font-size:12px">Brinks Vault • Insured • 24/7 CCTV</span></div>
+<div><b>⚖️</b><span style="color:#888;font-size:12px">Attorney Escrow • No Upfront Fees</span></div>
+<div><b>✈️</b><span style="color:#888;font-size:12px">Global Export • FOB Durban / CIF</span></div>
+</div>
+</div>
+
+<div class="contact">
+<h2 style="font-family:'Playfair Display';font-size:36px">Contact Direct Mandate</h2>
+<p style="color:#777;margin:12px 0 28px">Serious inquiries only. Submit LOI + POF for price and allocation.</p>
+<a class="btn-gold" href="tel:+27870550335" style="display:inline-flex">📞 TAP TO CALL LANDLINE: +27 87 055 0335</a>
+<div style="margin-top:18px"><a href="mailto:sarhodiumtrading.co.za@geologist.com" style="color:#d4af37;font-weight:800">sarhodiumtrading.co.za@geologist.com</a></div>
 </div>
 
 <div class="footer">
-SA RHODIUM TRADING<br>
-LANDLINE +27 87 055 0335 | sarhodiumtrading.co.za@geologist.com<br><br>
-© 2026 Direct Mandate • Secure Vault
+SA RHODIUM TRADING • LANDLINE +27 87 055 0335 • sarhodiumtrading.co.za@geologist.com<br><br>
+Direct Mandate • SGS Certified • Brinks Secured • Worldwide Export • © 2026
 </div>
+
 <a class="float" href="tel:+27870550335">📞</a>
 </body>
 </html>
