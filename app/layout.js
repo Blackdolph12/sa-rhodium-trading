@@ -1,0 +1,2 @@
+export const metadata = { title: 'SA RHODIUM TRADING | PRIVATE VAULT', description: 'Private Rhodium Vault South Africa' }
+export default function RootLayout({ children }) { return <html lang="en"><body style={{margin:0,background:'#07070a',color:'#fff'}}>{children}</body></html> }
