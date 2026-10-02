@@ -4,150 +4,190 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SA RHODIUM TRADING | PRIVATE VAULT</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}
-body{font-family:'Cormorant Garamond',serif;background:#07070a;color:#fff;line-height:1.6}
-.top{background:linear-gradient(180deg,#0f0f14 0%,#05050a 100%);border-bottom:3px solid #d4af37;padding:22px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;box-shadow:0 12px 40px rgba(212,175,55,0.12)}
-.logo{font-size:18px;font-weight:700;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 12px rgba(212,175,55,0.25)}
-.logo span{color:#d4af37;font-weight:700}
-.badge{border:2px solid #d4af37;color:#d4af37;padding:10px 22px;border-radius:50px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:rgba(212,175,55,0.04);font-family:'Cormorant Garamond',serif}
-.kpi-strip{background:linear-gradient(90deg,rgba(212,175,55,0.03) 0%,rgba(212,175,55,0.01) 50%,rgba(212,175,55,0.03) 100%);border-top:1px solid rgba(212,175,55,0.1);border-bottom:1px solid rgba(212,175,55,0.1);padding:28px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;max-width:1400px;margin:0 auto}
-.kpi{text-align:center}
-.kpi-value{font-size:32px;font-weight:700;color:#d4af37;letter-spacing:-1px;margin-bottom:6px}
-.kpi-label{font-size:11px;color:#888;letter-spacing:1.5px;text-transform:uppercase}
-.hero{max-width:1400px;margin:0 auto;padding:60px 30px;display:grid;grid-template-columns:1.4fr 0.6fr;gap:50px;align-items:center}
-.hero h1{font-size:64px;font-weight:700;line-height:1.2;letter-spacing:-2px;margin-bottom:22px;color:#fff}
-.hero h1 span{color:#d4af37}
-.hero p{color:#aaa;margin-bottom:32px;line-height:1.8;font-size:15px;font-weight:400}
-.call{background:linear-gradient(135deg,#d4af37 0%,#c9a727 100%);color:#07070a;padding:18px 36px;border-radius:50px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;margin-top:20px;cursor:pointer;transition:all 0.35s;border:2px solid #d4af37;font-size:14px;letter-spacing:1px;font-family:'Cormorant Garamond',serif;text-transform:uppercase}
-.call:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(212,175,55,0.28)}
-.email{margin-top:16px;display:inline-flex;color:#d4af37;border:2px solid #d4af37;padding:14px 26px;border-radius:50px;text-decoration:none;font-weight:600;font-size:12px;letter-spacing:1px;background:rgba(212,175,55,0.03);transition:all 0.35s;font-family:'Cormorant Garamond',serif}
-.email:hover{background:rgba(212,175,55,0.1);box-shadow:0 10px 28px rgba(212,175,55,0.18)}
-.hero-jar{background:linear-gradient(135deg,#1a1a22 0%,#0f0f14 100%);border:2px solid #d4af37;border-radius:20px;padding:14px;box-shadow:inset 0 0 40px rgba(0,0,0,0.7),0 0 40px rgba(212,175,55,0.14)}
-.hero-jar img{width:100%;height:360px;object-fit:cover;border-radius:16px;display:block}
-.section-title{font-size:38px;font-weight:700;letter-spacing:-1px;margin-bottom:12px;color:#fff}
-.section-subtitle{font-size:13px;color:#999;letter-spacing:1px;text-transform:uppercase;margin-bottom:40px}
-.gallery-section{max-width:1400px;margin:50px auto 0;padding:0 30px}
-.masonry{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:18px;grid-auto-rows:180px;max-width:1400px;margin:0 auto;padding:0 30px}
-.masonry .card{background:linear-gradient(135deg,#1a1a22 0%,#0f0f14 100%);border:1px solid rgba(212,175,55,0.15);border-radius:12px;overflow:hidden;cursor:pointer;transition:all 0.35s;box-shadow:0 6px 16px rgba(0,0,0,0.5);position:relative}
-.masonry .card:hover{transform:translateY(-6px) scale(1.02);border-color:#d4af37;box-shadow:0 14px 36px rgba(212,175,55,0.18)}
-.card-img{width:100%;height:120px;display:block;background:#0a0a0d;object-fit:cover}
-.card-info{padding:12px;border-top:1px solid rgba(212,175,55,0.1);height:60px;display:flex;flex-direction:column;justify-content:space-between}
-.card-id{color:#d4af37;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
-.card-label{color:#aaa;font-size:10px;margin-top:3px}
-.masonry .card:nth-child(1){grid-column:span 1;grid-row:span 2}
-.masonry .card:nth-child(5){grid-column:span 1;grid-row:span 2}
-.masonry .card:nth-child(9){grid-column:span 1;grid-row:span 2}
-.masonry .card:nth-child(17){grid-column:span 1;grid-row:span 2}
-.masonry .card:nth-child(25){grid-column:span 1;grid-row:span 2}
-.minerals-section{max-width:1400px;margin:80px auto 0;padding:0 30px}
-.minerals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1400px;margin:0 auto;padding:0 30px}
-.mineral-card{background:linear-gradient(135deg,#1a1a22 0%,#0f0f14 100%);border:2px solid rgba(212,175,55,0.2);border-radius:14px;overflow:hidden;cursor:pointer;transition:all 0.35s;box-shadow:0 8px 20px rgba(0,0,0,0.6)}
-.mineral-card:hover{transform:translateY(-8px);border-color:#d4af37;box-shadow:0 16px 40px rgba(212,175,55,0.22)}
-.mineral-visual{width:100%;height:220px;display:flex;align-items:center;justify-content:center;font-size:80px;background:linear-gradient(135deg,#1a1a22 0%,#0f0f14 100%)}
-.mineral-gold{background:linear-gradient(135deg,#FFD700 0%,#FFA500 50%,#FF8C00 100%)}
-.mineral-platinum{background:linear-gradient(135deg,#E5E4E2 0%,#D3D3D3 50%,#A9A9A9 100%)}
-.mineral-palladium{background:linear-gradient(135deg,#C0C0C0 0%,#B0B0B0 50%,#808080 100%)}
-.mineral-iridium{background:linear-gradient(135deg,#4C4C4C 0%,#383838 50%,#252525 100%)}
-.mineral-chrome{background:linear-gradient(135deg,#8B0000 0%,#DC143C 50%,#FF6347 100%)}
-.mineral-diamond{background:linear-gradient(135deg,#F0F8FF 0%,#E6F2FF 50%,#D0E8FF 100%);color:#333}
-.mineral-info{padding:18px;border-top:1px solid rgba(212,175,55,0.1)}
-.mineral-name{font-size:14px;font-weight:700;color:#d4af37;letter-spacing:1px;margin-bottom:6px;text-transform:uppercase}
-.mineral-desc{font-size:12px;color:#aaa;line-height:1.5}
-.divider-section{max-width:1400px;margin:60px auto;padding:0 30px;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(212,175,55,0.2) 50%,transparent 100%)}
-.cta-section{text-align:center;padding:60px 30px;margin-top:50px;background:linear-gradient(180deg,rgba(212,175,55,0.02) 0%,rgba(0,0,0,0.4) 100%)}
-.cta-call{margin-bottom:18px}
-.cta-text{color:#d4af37;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
-.footer{text-align:center;padding:40px 30px;color:#666;font-size:11px;border-top:2px solid rgba(212,175,55,0.1);margin-top:60px;background:linear-gradient(180deg,rgba(212,175,55,0.02) 0%,rgba(0,0,0,0.5) 100%);letter-spacing:0.8px}
-@media(max-width:1200px){.hero{grid-template-columns:1fr;gap:40px}.masonry{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.kpi-strip{grid-template-columns:repeat(2,1fr);gap:20px}.minerals-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.hero{grid-template-columns:1fr;gap:30px}.hero h1{font-size:42px}.masonry{grid-template-columns:repeat(2,1fr)}.kpi-strip{grid-template-columns:1fr;gap:15px}.top{padding:16px 20px}.gallery-section{padding:0 20px}.minerals-section{padding:0 20px}.minerals-grid{grid-template-columns:1fr;gap:16px;padding:0 20px}.hero{padding:40px 20px}.kpi-strip{padding:20px}.mineral-card{border-width:1px}.mineral-visual{height:180px;font-size:60px}}
-@media(max-width:480px){.hero h1{font-size:32px}.masonry{grid-template-columns:1fr}.section-title{font-size:28px}.kpi-value{font-size:24px}.mineral-visual{height:140px;font-size:48px}}
+:root{--bg:#07070a;--panel:#101117;--panel-2:#171922;--gold:#d4af37;--gold-2:#f0d77a;--gold-3:#9b7a1d;--text:#f7f4ee;--muted:#9f9d97;--line:rgba(212,175,55,.18);--soft:rgba(255,255,255,.06)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}
+img{max-width:100%;display:block}.a{color:inherit;text-decoration:none}
+.top-wrap{background:linear-gradient(180deg,#111217 0%,#090b0f 100%);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}
+.top{max-width:1540px;margin:0 auto;padding:18px 30px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:18px;letter-spacing:4px;text-transform:uppercase;font-weight:800;display:flex;align-items:center;gap:8px}
+.logo .mark{color:var(--gold);font-weight:900}
+.badge{border:1px solid var(--gold);padding:10px 16px;border-radius:999px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:10px;font-weight:700;background:rgba(212,175,55,.04)}
+.hero-wrap{position:relative;overflow:hidden;background:radial-gradient(circle at top center,rgba(212,175,55,.10),transparent 40%),linear-gradient(180deg,#090b0f 0%,#07070a 100%)}
+.hero-wrap::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.02) 48%,transparent 100%);pointer-events:none}
+.hero{max-width:1540px;margin:0 auto;padding:72px 30px 30px;display:grid;grid-template-columns:1.18fr .82fr;gap:54px;align-items:center;position:relative}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:700}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:120px;line-height:.78;letter-spacing:-5px;margin:0 0 22px;font-weight:700;max-width:700px}
+.hero h1 .gold{color:var(--gold);display:inline-block;text-shadow:0 0 24px rgba(212,175,55,.22)}
+.hero .intro{max-width:680px;color:#c2beb4;font-size:16px;line-height:1.85;margin-bottom:26px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:18px}
+.call,.email{display:inline-flex;align-items:center;justify-content:center;min-height:58px;border-radius:999px;padding:0 28px;text-decoration:none;transition:.25s ease}
+.call{background:linear-gradient(135deg,var(--gold) 0%,#c8a12c 100%);color:#0b0c10;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:13px;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 35px rgba(212,175,55,.18)}
+.call:hover{transform:translateY(-2px);box-shadow:0 25px 45px rgba(212,175,55,.26)}
+.email{border:1px solid rgba(212,175,55,.6);color:var(--gold);background:rgba(212,175,55,.03);font-weight:700;letter-spacing:.75px;font-size:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;padding-top:10px;color:var(--muted);font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.hero-meta .meta-item{display:flex;align-items:center;gap:8px}
+.meta-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#f8e9a8);box-shadow:0 0 18px rgba(212,175,55,.45)}
+.hero-visual{position:relative;padding:16px;border-radius:30px;background:linear-gradient(135deg,rgba(212,175,55,.17),rgba(255,255,255,.02));border:1px solid var(--line);overflow:hidden;box-shadow:inset 0 0 38px rgba(0,0,0,.7),0 30px 70px rgba(0,0,0,.5)}
+.hero-visual::after{content:"";position:absolute;inset:-30% -20% auto auto;width:240px;height:240px;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 60%);filter:blur(20px)}
+.hero-visual img{width:100%;height:520px;object-fit:cover;border-radius:18px;border:1px solid rgba(212,175,55,.25);display:block;background:#0a0a0d}
+.hero-visual .caption{position:absolute;left:30px;right:30px;bottom:28px;background:linear-gradient(180deg,rgba(7,7,10,.18),rgba(7,7,10,.68));border:1px solid rgba(212,175,55,.2);padding:14px 18px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(10px)}
+.caption .tag{color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.caption .value{font-size:12px;color:#ddd;letter-spacing:1.4px;text-transform:uppercase}
+.kpi-strip{max-width:1540px;margin:0 auto;padding:0 30px 28px}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:rgba(255,255,255,.01);overflow:hidden;border-radius:20px}
+.kpi-card{padding:22px 16px;border-right:1px solid var(--line);display:flex;align-items:center;gap:14px;min-height:104px;position:relative}
+.kpi-card:last-child{border-right:none}
+.kpi-icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:22px;background:linear-gradient(135deg,rgba(212,175,55,.14),rgba(212,175,55,.02));border:1px solid rgba(212,175,55,.2)}
+.kpi-copy .label{color:var(--muted);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.kpi-copy .value{font-size:26px;line-height:1;color:var(--text);margin-top:4px;font-weight:700}
+.gallery-section,.minerals-section{max-width:1540px;margin:0 auto;padding:54px 30px 0}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:20px}
+.section-head h2{font-family:'Cormorant Garamond',serif;font-size:54px;line-height:1;letter-spacing:-1px}
+.section-head .lead{max-width:560px;color:#c3c0b7;font-size:15px;line-height:1.8}
+.masonry{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;grid-auto-rows:190px}
+.card{position:relative;background:linear-gradient(135deg,#171922 0%,#0d0f14 100%);border:1px solid rgba(212,175,55,.16);border-radius:16px;overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,.38);transition:.3s ease;break-inside:avoid}
+.card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.4);box-shadow:0 18px 36px rgba(212,175,55,.16)}
+.card:nth-child(odd){transform:translateY(16px)}
+.card:nth-child(odd):hover{transform:translateY(10px)}
+.card img{width:100%;height:100%;object-fit:cover;display:block;background:#090b0f}
+.card .meta{position:absolute;left:0;right:0;bottom:0;padding:14px 14px 12px;background:linear-gradient(180deg,transparent 0%,rgba(7,7,10,.12) 18%,rgba(7,7,10,.86) 100%);display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.card .meta .id{color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.card .meta .name{font-size:11px;color:#d9d2c7;letter-spacing:1px;text-transform:uppercase}
+.divider{max-width:1540px;margin:58px auto 0;border-top:1px solid var(--line);padding:0 30px}
+.minerals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:26px}
+.mineral-card{background:linear-gradient(135deg,#13151c 0%,#0b0d12 100%);border:1px solid rgba(212,175,55,.18);border-radius:18px;overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.35);transition:.3s ease}
+.mineral-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.42);box-shadow:0 16px 34px rgba(212,175,55,.16)}
+.mineral-visual{height:200px;display:flex;align-items:center;justify-content:center;font-size:72px;background:linear-gradient(135deg,var(--gold) 0%,#f5df8a 20%,#c29d2a 100%);color:#0a0d12;border-bottom:1px solid rgba(212,175,55,.25)}
+.mineral-visual.gold{background:linear-gradient(135deg,#ffdf5f 0%,#f8c94d 25%,#d4af37 100%);color:#17130a}.mineral-visual.platinum{background:linear-gradient(135deg,#f3f3f0 0%,#d8d8d6 25%,#a7a6a8 100%);color:#242426}.mineral-visual.palladium{background:linear-gradient(135deg,#f0f0f1 0%,#c4c3c8 25%,#7d7d82 100%);color:#27272b}.mineral-visual.iridium{background:linear-gradient(135deg,#4b4b50 0%,#2f2f31 25%,#111317 100%);color:#f0e9db}.mineral-visual.chrome{background:linear-gradient(135deg,#ff7b5d 0%,#d43d36 35%,#7d0f17 100%);color:#fff}.mineral-visual.diamond{background:linear-gradient(135deg,#eef7ff 0%,#dfeaf9 30%,#b1c7f3 100%);color:#18212a}
+.mineral-info{padding:18px 18px 20px}
+.mineral-name{font-size:13px;font-weight:800;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.mineral-copy{font-size:13px;color:#c9c5be;margin-top:8px;line-height:1.8}
+.cta-wrap{max-width:1540px;margin:0 auto;padding:66px 30px 0}
+.cta-box{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;background:linear-gradient(180deg,rgba(212,175,55,.03) 0%,rgba(212,175,55,.01) 100%);border:1px solid var(--line);border-radius:22px}
+.cta-box .big{margin-bottom:16px}
+.cta-box .txt{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.footer{max-width:1540px;margin:0 auto;padding:42px 30px 60px;color:#7f7b73;text-align:center;font-size:11px;letter-spacing:1.2px;text-transform:uppercase}
+@media (max-width:1180px){.hero{grid-template-columns:1fr}.hero h1{font-size:92px}.kpi-grid{grid-template-columns:repeat(2,1fr)}.minerals-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.top{padding:16px 20px}.hero{padding:48px 20px 20px}.kpi-strip,.gallery-section,.minerals-section,.cta-wrap,.footer{padding-left:20px;padding-right:20px}.kpi-grid{grid-template-columns:1fr}.section-head{display:block}.section-head h2{font-size:42px}.masonry{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.hero h1{font-size:70px}.minerals-grid{grid-template-columns:1fr}.hero-visual img{height:420px}} 
+@media (max-width:480px){.hero h1{font-size:52px;letter-spacing:-2px}.hero .intro{font-size:14px}.hero-actions{flex-direction:column;align-items:flex-start}.call,.email{width:100%}.masonry{grid-template-columns:1fr}.card:nth-child(odd){transform:none}.card:nth-child(odd):hover{transform:translateY(-4px)}.badge{letter-spacing:1px;padding:9px 12px}.logo{letter-spacing:2px;font-size:14px}.section-head h2{font-size:36px}}
 </style>
 </head>
 <body>
-<div class="top"><div class="logo">SA <span>RHODIUM</span> TRADING</div><div class="badge">RHODIUM • PRIVATE VAULT</div></div>
+<div class="top-wrap">
+  <div class="top">
+    <div class="logo">SA <span class="mark">RHODIUM</span> TRADING</div>
+    <div class="badge">RHODIUM • PRIVATE VAULT</div>
+  </div>
+</div>
+<div class="hero-wrap">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Private allocation • vault custody</div>
+      <h1>FINE <span class="gold">RHODIUM</span><br>99.95%</h1>
+      <div class="intro">Direct mandate. SGS certified. Secure custody. Global export. Institutional allocations, vault-backed inventory and private procurement channels for qualified investors seeking rare-metals exposure and long-term strategic value.</div>
+      <div class="hero-actions">
+        <a class="call" href="tel:+27870550335">Landline +27 87 055 0335</a>
+        <a class="email" href="mailto:sarhodiumtrading.co.za@geologist.com">sarhodiumtrading.co.za@geologist.com</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><span class="meta-dot"></span> Cert. status</div>
+        <div class="meta-item"><span class="meta-dot"></span> Vault secured</div>
+        <div class="meta-item"><span class="meta-dot"></span> Export ready</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEQAFAAWAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAQQFBwD/xAAaEAACAgMAAAAAAAAAAAAAAAAAARECAxIyQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC34KAv" alt="Rhodium">
+      <div class="caption"><span class="tag">Rhodium</span><span class="value">99.95% Pure</span></div>
+    </div>
+  </div>
+</div>
 <div class="kpi-strip">
-<div class="kpi"><div class="kpi-value">99.95%</div><div class="kpi-label">Purity Grade</div></div>
-<div class="kpi"><div class="kpi-value">SGS</div><div class="kpi-label">Certified</div></div>
-<div class="kpi"><div class="kpi-value">32</div><div class="kpi-label">Allocations</div></div>
-<div class="kpi"><div class="kpi-value">∞</div><div class="kpi-label">Value</div></div>
-</div>
-<div class="hero">
-<div>
-<h1>INVESTMENT GRADE<br><span>RHODIUM</span></h1>
-<p>Direct mandate. SGS certified. Vault secured. Global export. LOI+POF. Private allocation exclusively available to qualified investors with institutional-grade custody and portfolio diversification requirements.</p>
-<a class="call" href="tel:+27870550335">📞 LANDLINE +27 87 055 0335</a><br>
-<a class="email" href="mailto:sarhodiumtrading.co.za@geologist.com">📧 sarhodiumtrading.co.za@geologist.com</a>
-</div>
-<div class="hero-jar">
-<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEQAFAAWAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAQQFBwD/xAAaEAACAgMAAAAAAAAAAAAAAAAAARECAxIyQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC34KAv" alt="RHODIUM">
-</div>
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="kpi-icon">✦</div><div class="kpi-copy"><div class="label">Purity</div><div class="value">99.95%</div></div></div>
+    <div class="kpi-card"><div class="kpi-icon">⛨</div><div class="kpi-copy"><div class="label">Custody</div><div class="value">Vault</div></div></div>
+    <div class="kpi-card"><div class="kpi-icon">◈</div><div class="kpi-copy"><div class="label">Format</div><div class="value">Bars</div></div></div>
+    <div class="kpi-card"><div class="kpi-icon">⇄</div><div class="kpi-copy"><div class="label">Export</div><div class="value">Global</div></div></div>
+  </div>
 </div>
 <div class="gallery-section">
-<h2 class="section-title">Premium Rhodium Collection</h2>
-<p class="section-subtitle">32 Allocations • Editorial Masonry • Museum Grade</p>
+  <div class="section-head">
+    <h2>Rhodium Collection</h2>
+    <div class="lead">Curated private inventory with discreet allocation, institutional-grade verification and scarce high-purity holdings for strategic physical metal allocation.</div>
+  </div>
+  <div class="masonry" id="gallery"></div>
 </div>
-<div class="masonry" id="gallery"></div>
-<div class="divider-section"></div>
+<div class="divider"></div>
 <div class="minerals-section">
-<h2 class="section-title">Precious Metals & Minerals Inventory</h2>
-<p class="section-subtitle">Global Vault Holdings • Institutional Grade</p>
+  <div class="section-head">
+    <h2>Precious Metals & Minerals Inventory</h2>
+    <div class="lead">An expanded vault portfolio spanning premier metals, rare industrial minerals and high-value natural resources.</div>
+  </div>
+  <div class="minerals-grid">
+    <div class="mineral-card">
+      <div class="mineral-visual gold">💰</div>
+      <div class="mineral-info">
+        <div class="mineral-name">FINE GOLD 999.9</div>
+        <div class="mineral-copy">1Kg Bars + Nuggets • Premium vault stock • Certified investment grade</div>
+      </div>
+    </div>
+    <div class="mineral-card">
+      <div class="mineral-visual platinum">◈</div>
+      <div class="mineral-info">
+        <div class="mineral-name">PLATINUM 999.5</div>
+        <div class="mineral-copy">1Kg Bars + Powder • Vault 12 • Secure stock and export inventory</div>
+      </div>
+    </div>
+    <div class="mineral-card">
+      <div class="mineral-visual palladium">⬚</div>
+      <div class="mineral-info">
+        <div class="mineral-name">PALLADIUM 99.98%</div>
+        <div class="mineral-copy">10oz Bars • Industrial-grade holdings • Ready for allocation</div>
+      </div>
+    </div>
+    <div class="mineral-card">
+      <div class="mineral-visual iridium">◆</div>
+      <div class="mineral-info">
+        <div class="mineral-name">IRIDIUM + RUTHENIUM</div>
+        <div class="mineral-copy">Rare metals • Limited supply • Strategic high-value inventory</div>
+      </div>
+    </div>
+    <div class="mineral-card">
+      <div class="mineral-visual chrome">◬</div>
+      <div class="mineral-info">
+        <div class="mineral-name">CHROME ORE + MANGANESE</div>
+        <div class="mineral-copy">Industrial minerals • Bulk supply • Export and processing support</div>
+      </div>
+    </div>
+    <div class="mineral-card">
+      <div class="mineral-visual diamond">◇</div>
+      <div class="mineral-info">
+        <div class="mineral-name">DIAMOND — NATURAL ROUGH</div>
+        <div class="mineral-copy">Certified rough stones • Rare parcels • Premium natural valuations</div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="minerals-grid">
-<div class="mineral-card">
-<div class="mineral-visual mineral-gold">💰</div>
-<div class="mineral-info">
-<div class="mineral-name">Fine Gold 999.9</div>
-<div class="mineral-desc">1Kg Bars + Nuggets • Certified Pure • Investment Grade</div>
+<div class="cta-wrap">
+  <div class="cta-box">
+    <a class="call big" href="tel:+27870550335">Tap to call +27 87 055 0335</a>
+    <div class="txt">Private vault allocation • global export</div>
+  </div>
 </div>
-</div>
-<div class="mineral-card">
-<div class="mineral-visual mineral-platinum">💎</div>
-<div class="mineral-info">
-<div class="mineral-name">Platinum 999.5</div>
-<div class="mineral-desc">1Kg Bars + Powder • Vault 12 Secure • SGS Verified</div>
-</div>
-</div>
-<div class="mineral-card">
-<div class="mineral-visual mineral-palladium">⬜</div>
-<div class="mineral-info">
-<div class="mineral-name">Palladium 99.98%</div>
-<div class="mineral-desc">10oz Bars • Industrial Grade • Certified</div>
-</div>
-</div>
-<div class="mineral-card">
-<div class="mineral-visual mineral-iridium">◆</div>
-<div class="mineral-info">
-<div class="mineral-name">Iridium + Ruthenium</div>
-<div class="mineral-desc">Rare Metals • Extreme Purity • Limited Stock</div>
-</div>
-</div>
-<div class="mineral-card">
-<div class="mineral-visual mineral-chrome">🔴</div>
-<div class="mineral-info">
-<div class="mineral-name">Chrome Ore + Manganese</div>
-<div class="mineral-desc">Industrial Minerals • Bulk Orders • Export Ready</div>
-</div>
-</div>
-<div class="mineral-card">
-<div class="mineral-visual mineral-diamond">◇</div>
-<div class="mineral-info">
-<div class="mineral-name">Diamond • Natural Rough</div>
-<div class="mineral-desc">Certified Rough • Investment Grade • Rare Cuts</div>
-</div>
-</div>
-</div>
-<div class="cta-section">
-<a class="call cta-call" href="tel:+27870550335">📞 TAP TO CALL LANDLINE +27 87 055 0335</a>
-<div class="cta-text">DIRECT MANDATE • WORLDWIDE EXPORT • PRIVATE VAULT ALLOCATION</div>
-</div>
-<div class="footer">SA RHODIUM TRADING • +27 87 055 0335 • sarhodiumtrading.co.za@geologist.com • Direct Mandate • SGS Certified • Vault Secured • © 2026</div>
+<div class="footer">SA RHODIUM TRADING • LANDLINE +27 87 055 0335 • sarhodiumtrading.co.za@geologist.com • DIRECT MANDATE • SECRET VAULT • © 2026</div>
 <script>
 const IMG="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEQAFAAWAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAQQFBwD/xAAaEAACAgMAAAAAAAAAAAAAAAAAARECAxIyQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC34KAv";
 const labels=["Fine Powder","Vault Stock","Export Ready","1KG Ingot","SGS Certified","Crystal Form","Investment Grade","Secure Storage","Brinks Logistics","Lab Tested","Premium Dust","Catalog Stock","Refined Form","2KG Ingot","Rhodium Bar","Select Grade","Investment Form","Certified Pure","Powder Stock","Vault Kept","Export Stock","Investment 5KG","SGS Report","Crystal Structure","Catalog Item","Fine Particle","Safety Box","Certificate","Trade Ready","Liquid Form","Concentrate","Pure Element"];
-const g=document.getElementById("gallery");
-for(let i=0;i<32;i++){const c=document.createElement("div");c.className="card";c.innerHTML=`<img class="card-img" src="${IMG}" alt="RH-${(i+1).toString().padStart(2,'0')}"><div class="card-info"><div class="card-id">RH-${(i+1).toString().padStart(2,'0')}</div><div class="card-label">${labels[i]}</div></div>`;g.appendChild(c);}
+const g=document.getElementById('gallery');
+for(let i=0;i<32;i++){
+  const card=document.createElement('div');
+  card.className='card';
+  card.innerHTML='<img src="'+IMG+'" alt="RH-'+String(i+1).padStart(2,'0')+'"><div class="meta"><div class="id">RH-'+String(i+1).padStart(2,'0')+'</div><div class="name">'+labels[i]+'</div></div>';
+  g.appendChild(card);
+}
 </script>
 </body>
 </html>
